@@ -223,6 +223,10 @@ struct SettingsView: View {
                                   "Leave out windows that are minimized to the Dock or belong to hidden apps.",
                                   $prefs.hideMinimizedWindows)
                         Divider().opacity(0.4)
+                        toggleRow("Only windows on the current display (mouse)",
+                                  "List windows on the screen under the pointer, not every display. Off by default.",
+                                  $prefs.onlyPointerDisplayWindows)
+                        Divider().opacity(0.4)
                         toggleRow("Show number key hints",
                                   "Label the first nine windows with the 1-9 key that picks them.",
                                   $prefs.showNumberKeyHints)
